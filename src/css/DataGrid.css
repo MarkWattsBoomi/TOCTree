@@ -1,0 +1,246 @@
+.data-grid {
+    display: block;
+    border: 1px solid #ccc;
+    position: relative;
+}
+
+.data-grid-header {
+    background-color: #033d58;
+    display: flex;
+    flex-direction: row;
+    flex-grow: 0;
+    font-size: 18px;
+    white-space: nowrap;
+    color: #111;
+    font-weight: 500;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 2.2rem;
+}
+
+.data-grid-headers {
+    display: flex;
+    flex-direction: row;
+    background-color: #ccc;
+}
+
+.data-grid-body {
+    flex-grow: 1;
+    flex-shrink: 1;
+    display: flex;
+    flex-direction: column;
+    overflow: auto;
+    position: absolute;
+    top: 2.2rem;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+
+
+
+
+.data-grid-header-title-wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-grow: 1;
+}
+
+.data-grid-header-title {
+    flex-grow: 1;
+    flex-shrink: 0;
+    flex-wrap: nowrap;
+    color: #DF6D59;
+    color: #ddd;
+    font-size: 18px;
+    font-weight: 500;
+    margin: auto;
+    margin-left: 18px;
+    user-select: none;
+}
+
+.data-grid-header-search {
+    display: flex;
+    flex-direction: row;
+    background-color: #fefefe;
+    flex-grow: 0;
+    margin-right: 2rem;
+    margin-top: 0.2rem;
+    margin-bottom: 0.2rem;
+}
+
+.data-grid-header-search-input {
+    font-size: 1rem !important;
+    line-height: 1 !important;
+    color: #033d58 !important;
+    border: none !important;
+    background-color: transparent !important;
+    padding: 0.2rem;
+}
+
+.data-grid-header-search-button {
+    font-size: 1.2rem;
+    margin: 0;
+    color: #033d58;
+    align-self: center;
+    top: 0 !important;
+    margin: auto;
+    margin-right: 0.2rem;
+    margin-left: 0.2rem;
+}
+
+.data-grid-header-search-button:hover {
+    color: #ff7c66;
+    cursor: pointer;
+}
+
+.data-grid-header-buttons {
+    display: flex;
+    flex-direction: row;
+    flex-grow: 0;
+    align-items: center;
+}
+
+.data-grid-header-button {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-right: 1rem;
+    color: #fefefe;
+}
+
+.data-grid-header-button:hover {
+    color: #ff7c66;
+    cursor: pointer;
+}
+
+.data-grid-header-button-icon {
+    font-size: 1.2rem;
+    margin-right: 0.5rem;
+    top: 0px !important;
+}
+
+.data-grid-header-button-label {
+    font-size: 1rem;
+}
+
+.data-grid-table {
+    overflow: visible;
+    width: 100%;
+    height: 100%;
+}
+
+.data-grid-table-head {
+    
+}
+
+.data-grid-table-headers {
+    background-color: #ccc;
+}
+
+.data-grid-table-header {
+    background-color: #ccc !important;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.data-grid-table-check-header {
+    background-color: #ccc;
+    position: sticky;
+    top: 0;
+    width: 40px;
+}
+
+.data-grid-table-header-label {
+    font-size: 18px;
+    white-space: nowrap;
+    color: #111;
+    font-weight: 500;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+}
+
+.data-grid-table-body {
+    
+}
+
+.data-grid-table-row {
+    
+}
+.data-grid-table-filler-row {
+    height: 100%;
+}
+
+.data-grid-table-column {
+    
+}
+
+.data-grid-table-buttons-column {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 1rem !important;
+}
+
+.data-grid-column-label {
+    font-size: 1.2rem;
+    white-space: nowrap;
+    color: #033d58;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    margin: auto !important;
+}
+
+.data-grid-table-check-column {
+    width: 40px;
+}
+
+.data-grid-check-box {
+    display: block !important;
+    appearance: revert !important;
+    content: unset !important;
+    margin: auto !important;
+    transform: scale(1.5); 
+    padding: auto;
+}
+
+.data-grid-check-box::after,.data-grid-check-box::before {
+    display: none !important;
+}
+
+.data-grid-column-button {
+    font-size: 1.2rem;
+    margin: auto;
+    cursor: pointer;
+    pointer-events: all;
+}
+
+.data-grid-table-footer {
+    border-top: 1px solid #aaa;
+}
+
+.data-grid-table-footer-row {
+    
+}
+
+.data-grid-table-footer-cell {
+    position: sticky;
+    bottom: -1px;
+    z-index: 1000;
+    background-color: #ccc;
+}
+
+.data-grid-table-footer-cell-label {
+    color: #000;
+    font-size: 1.2rem;
+}
+
+.data-grid-table-footer-cell-value {
+    color: #000;
+    font-size: 1.2rem;
+    margin-left: 0.5rem;
+}
