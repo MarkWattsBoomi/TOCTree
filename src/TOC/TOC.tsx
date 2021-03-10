@@ -111,6 +111,51 @@ export default class TOC extends FlowComponent {
         this.refreshSelectedFromState();
     }
 
+    
+   
+/*
+    async callRequestxx(url: string, method: string, data: any): Promise<any> {
+        let results: any;
+        const request: RequestInit = {};
+        const token: string = manywho.state.getAuthenticationToken(this.flowKey);
+
+        request.method = method;  
+        request.headers = {
+            "Content-Type": "application/json",
+            "ManyWhoTenant": this.tenantId
+        };
+        if(token) {
+            request.headers.Authorization = token;
+        }
+        request.credentials= "same-origin";
+
+        if(method === "POST" || method === "PUT") {
+            request.body = data;
+        }
+            
+        let response = await fetch(url, request);
+        //let body: string =  await this.getResultBodyTextxx(response);
+        if(response.status === 200) {
+            //const json = await this.getResultBodyText(response);
+            
+            results = await response.json();
+
+            console.log("Fetch Complete");
+           
+        }
+        else {
+            //error
+            const errorText = await response.text();
+            console.log("Fetch Failed - " + errorText);
+            
+        }
+
+        return results;
+        
+        
+    }
+    */
+
     async refreshSelectedFromState() {
         let state: FlowObjectData = this.getStateValue() as FlowObjectData;
         this.selectedNodeId = undefined;
@@ -118,7 +163,7 @@ export default class TOC extends FlowComponent {
          if(this.getAttribute("SelectedState")) {
             let clickedState: FlowField;
             if(!this.fields[this.getAttribute("SelectedState")]) {
-                clickedState = await this.loadValue(this.getAttribute("SelectedState"));
+                clickedState = await this.loadValueNew(this.getAttribute("SelectedState"));
             } 
             else {
                 clickedState = this.fields[this.getAttribute("SelectedState")]
@@ -847,7 +892,7 @@ export default class TOC extends FlowComponent {
         
         
         //construct tree REACT elements
-        this.debug("render",eDebugLevel.error);
+        this.debug("render",eDebugLevel.verbose);
         
         
 
