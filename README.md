@@ -1,10 +1,12 @@
+![Toc Image](https://files-manywho-com.s3.amazonaws.com/e1dbcceb-070c-4ce6-95b0-ba282aaf4f48/toc.png)
+
 This module provides a tree view to display hierarchical data and allow editing and re-ordering.
 
 # Class Names
 
 TOC
 
-# TreeView
+# TOC
 
 ## Functionality
 
