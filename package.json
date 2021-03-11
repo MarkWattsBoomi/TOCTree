@@ -54,8 +54,8 @@
   },
   "flow": {
     "filenames": {
-      "js": "dpd.js",
-      "css": "dpd.css"
+      "js": "toc.js",
+      "css": "toc.css"
     }
   }
 }

@@ -2,9 +2,16 @@
 
 This module provides a tree view to display hierarchical data and allow editing and re-ordering.
 
+The latest version can be included in your player from this location: -
+
+```
+https://files-manywho-com.s3.amazonaws.com/e1dbcceb-070c-4ce6-95b0-ba282aaf4f48/toc.js
+https://files-manywho-com.s3.amazonaws.com/e1dbcceb-070c-4ce6-95b0-ba282aaf4f48/toc.css
+```
+
 # Class Names
 
-TOC
+toc
 
 # TOC
 
